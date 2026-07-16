@@ -1,4 +1,9 @@
-V8.3
+內部测试版本：V8.3
 -新增 equipment.py 模块
 -装备数据改为统一管理
 -Player 攻击改为自动读取装备数据
+公开展示版本:V0.2
+- Added wolf king boss
+- Added boss drop system
+- Fixed player HP system
+- Fixed save compatibility
