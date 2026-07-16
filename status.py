@@ -7,6 +7,6 @@ def show_status(player):
     print(f"武器：{player .weapon}")
     print(f"金币: {player . gold}")
     print(f"灵草: {player . grass}")
-    print(f"狼牙: {player . wolf_fang}")
+    print(f"狼王之牙: {player . items.get('狼王之牙', 0)}")
     print(f"经验: {player . exp} / 100")
 print("===============================") 

@@ -4,7 +4,7 @@ from fight import fight
 
 
 player = Player()
-
+player.attack =100
 
 boss = create_wolf_king()
 

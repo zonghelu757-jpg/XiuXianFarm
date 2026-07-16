@@ -1,4 +1,5 @@
 from monster import random_monster 
+from boss import create_wolf_king
 from fight import fight
 from bag import show_bag
 from shop import shop
@@ -22,10 +23,11 @@ def show_map(player):
         print("2. 森林")
         print("3. 村庄")
         print("4. 村长")
-        print("5. 使用灵草回血")
-        print("6. 背包")
-        print("7. 查看角色")
-        print("8.保存游戏")
+        print("5. 狼王洞穴")
+        print("6. 使用灵草回血")
+        print("7. 背包")
+        print("8. 查看角色")
+        print("9.保存游戏")
         print("0 返回")
 
         choice = input("选择：")
@@ -39,13 +41,15 @@ def show_map(player):
         elif choice == "4":
             village_quest(player)
         elif choice == "5":
+            enter_boss(player)
+        elif choice == "6":
             from heal import use_grass
             use_grass(player)
-        elif choice == "6":
-            show_bag(player)
         elif choice == "7":
-            show_status(player)
+            show_bag(player)
         elif choice == "8":
+            show_status(player)
+        elif choice == "9":
             save_game(player)
         elif choice == "0":
             break
@@ -58,6 +62,16 @@ def enter_farm(player):
 
 def enter_shop(player):
     shop(player)
+
+def enter_boss(player):
+
+    print("\n进入狼王洞穴...")
+
+    boss = create_wolf_king()
+
+    print(f"你遇到了{boss.name}")
+
+    fight(player,boss)
 
 def enter_forest(player):
     print("\n 进入妖兽森林...")
