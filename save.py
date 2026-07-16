@@ -53,7 +53,7 @@ def load_game(player):
 
         player.grass=data["grass"]
 
-        player.hp=data.get["hp", 100]
+        player.hp=data.get("hp", 100)
 
         player.max_hp=data["max_hp"]
 
