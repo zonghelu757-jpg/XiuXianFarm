@@ -1,0 +1,12 @@
+def show_status(player):
+    print()
+    print("======角色信息======")
+    print(f"境界: {player .realm}")
+    print(f"生命: {player . hp}/ {player . max_hp}")
+    print(f"攻击: {player .attack}")
+    print(f"武器：{player .weapon}")
+    print(f"金币: {player . gold}")
+    print(f"灵草: {player . grass}")
+    print(f"狼牙: {player . wolf_fang}")
+    print(f"经验: {player . exp} / 100")
+print("===============================") 
