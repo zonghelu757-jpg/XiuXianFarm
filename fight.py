@@ -12,14 +12,14 @@ def fight(player , monster):
         if monster . hp > 0:
             print(f"{monster . name} 攻击了你！")
 
-            player . hp -= monster . sattack
+            player . hp -= monster . attack
             print(f"你受到{monster . attack} 点伤害")
             print(f"你的生命{player .hp}")
         else:
             break
 
         if player .hp <= 0:
-            print("你被野狼击败了！")
+            print(f"你被{monster . name}击败了！")
             return
         else:
             print(f"{player . weapon}砍向了{monster . name}")

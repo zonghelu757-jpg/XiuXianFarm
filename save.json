@@ -1,17 +1,17 @@
 {
-    "gold": 2140,
+    "gold": 2170,
     "spirit_stone": 0,
-    "exp": 30,
+    "exp": 60,
     "realm": "练气二层",
     "grass": 11,
-    "hp": 120,
+    "hp": 104,
     "max_hp": 120,
     "attack": 15,
     "weapon": "木剑",
     "iron_sword": 2,
     "items": {
         "狐皮": 5,
-        "野猪肉": 5,
+        "野猪肉": 6,
         "熊掌": 4,
         "狼牙": 8,
         "蛇肉": 3
