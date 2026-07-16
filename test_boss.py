@@ -5,6 +5,10 @@ from fight import fight
 
 player = Player()
 
+
 boss = create_wolf_king()
 
 fight(player, boss)
+
+print("最终背包:")
+print(player.items)

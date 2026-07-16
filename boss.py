@@ -4,11 +4,13 @@ def create_wolf_king():
 
     return Monster("狼王", 300, 20, 300, 100, "狼王之牙")
 
-def boss_reward(player):
+def boss_reward(player, boss):
 
-    if "狼王之牙" not in player.items:
-        player.items["狼王之牙"] = 0
+    item = boss.drop
 
-    player.items["狼王之牙"] += 1
+    if item not in player.items:
+        player.items[item] = 0
 
-    print("获得狼王之牙 X1")
+    player.items[item] += 1
+
+    print(f"获得{item} x1")
