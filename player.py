@@ -9,6 +9,7 @@ class Player:
         self . chicken = 0
         self . rabbit = 0
         self . max_hp = 100
+        self . hp = 100
         self .attack = 10
         self . potion = 3
         self . wood_sword = 1

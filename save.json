@@ -5,6 +5,7 @@
     "realm": "练气二层",
     "grass": 11,
     "hp": 120,
+    "max_hp": 120,
     "attack": 15,
     "weapon": "木剑",
     "iron_sword": 2,

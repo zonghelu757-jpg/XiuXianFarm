@@ -15,6 +15,8 @@ def save_game(player):
 
         "hp": player.hp,
 
+        "max_hp": player.max_hp,
+
         "attack": player.attack,
 
         "weapon": player.weapon,
@@ -52,6 +54,8 @@ def load_game(player):
         player.grass=data["grass"]
 
         player.hp=data["hp"]
+
+        player.max_hp=data["max_hp"]
 
         player.attack=data["attack"]
 
