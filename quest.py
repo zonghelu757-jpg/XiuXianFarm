@@ -17,10 +17,10 @@ def village_quest(player):
 
         elif choice == "2":
 
-            print(f"当前狼牙：{player.wolf_fang}/5")
+            print(f"当前狼牙：{player.items}/5")
 
         elif choice == "3":
-            wolf_fang = player . items . get("狼牙", 0) 
+            items = player . items . get("狼牙", 0) 
             if player.items .get("狼牙", 0) >= 5:
 
                 player. gold += 100
@@ -31,7 +31,7 @@ def village_quest(player):
 
             else:
 
-                print(f"当前狼牙: {wolf_fang}/ 5")
+                print(f"当前狼牙: {items}/ 5")
 
         elif choice == "0":
 
